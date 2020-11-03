@@ -87,3 +87,67 @@ storiesOf('Stamp', module)
       </Stamp>
     </div>
   ))
+  .add('Pass an array of sizes', () => (
+    <div>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['medium', null, null, null, null, null]}
+      >
+        <PinIcon />
+        <Text>Larger at xs</Text>
+      </Stamp>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['small', 'medium', null, null, null, null]}
+      >
+        <PinIcon />
+        <Text>Larger at sm</Text>
+      </Stamp>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['small', null, 'medium', null, null, null]}
+      >
+        <PinIcon />
+        <Text>Larger at md</Text>
+      </Stamp>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['small', 'small', null, 'medium', null, null]}
+      >
+        <PinIcon />
+        <Text>Larger at lg</Text>
+      </Stamp>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['small', null, null, null, 'medium', null]}
+      >
+        <PinIcon />
+        <Text>Larger at xl</Text>
+      </Stamp>
+      <Stamp
+        borderColor='blue'
+        bg='blue'
+        color='white'
+        mr={2}
+        size={['small', null, null, null, null, 'medium']}
+      >
+        <PinIcon />
+        <Text>Larger at xxl</Text>
+      </Stamp>
+    </div>
+  ))
